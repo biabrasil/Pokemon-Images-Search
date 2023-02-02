@@ -11,7 +11,7 @@ export default function Example() {
             </span>
             <p className="ml-3 truncate font-medium text-white">
               <span className="md:hidden">The Pokédex is an ongoing project.</span>
-              <span className="hidden md:inline">The Pokédex is an ongoing project. If you have a sugestion, please find my github.</span>
+              <span className="hidden md:inline">The Pokédex is an ongoing project. If you have a suggestion, please find my github.</span>
             </p>
           </div>
           <div className="order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto">
