@@ -1,4 +1,4 @@
-import { MegaphoneIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { MegaphoneIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Example() {
   return (
@@ -7,11 +7,19 @@ export default function Example() {
         <div className="flex flex-wrap items-center justify-between">
           <div className="flex w-0 flex-1 items-center">
             <span className="flex rounded-lg bg-indigo-800 p-2">
-              <MegaphoneIcon className="h-6 w-6 text-white" aria-hidden="true" />
+              <MegaphoneIcon
+                className="h-6 w-6 text-white"
+                aria-hidden="true"
+              />
             </span>
             <p className="ml-3 truncate font-medium text-white">
-              <span className="md:hidden">The Pokédex is an ongoing project.</span>
-              <span className="hidden md:inline">The Pokédex is an ongoing project. If you have a suggestion, please find my github.</span>
+              <span className="md:hidden">
+                The Pokédex is an ongoing project.
+              </span>
+              <span className="hidden md:inline">
+                The Pokédex is an ongoing project. If you have a suggestion,
+                please find my github.
+              </span>
             </p>
           </div>
           <div className="order-3 mt-2 w-full flex-shrink-0 sm:order-2 sm:mt-0 sm:w-auto">
@@ -34,5 +42,5 @@ export default function Example() {
         </div>
       </div>
     </div>
-  )
+  );
 }
