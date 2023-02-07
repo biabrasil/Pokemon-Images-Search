@@ -6,16 +6,14 @@ import Pikachu from "../images/pikachu.png";
 import Gengar from "../images/Gengar.png";
 import Jigglypuff from "../images/Jigglypuff.png";
 
-
 export default function Button() {
-
-    const imageMap = {
-        Pikachu,
-        Bulbasaur,
-        Chikorita,
-        Gengar,
-        Jigglypuff,
-    }
+  const imageMap = {
+    Pikachu,
+    Bulbasaur,
+    Chikorita,
+    Gengar,
+    Jigglypuff,
+  };
 
   function getRandomPokemon() {
     const pokemon = [
@@ -35,12 +33,27 @@ export default function Button() {
   };
 
   const renderedPokemon = pokemon.map((pokemon, index) => {
-    return <ProfileCard title={pokemon} key={index} image={imageMap[pokemon]}></ProfileCard>
-  })
+    return (
+     
+      <ProfileCard
+        title={pokemon}
+        key={index}
+        image={imageMap[pokemon]}
+      ></ProfileCard>
+
+    );
+  });
 
   return (
     <div>
-      <button onClick={handleClick}>Add new Pokémon</button>
+      <button
+        className={
+          "bg-indigo-500 p-5 motion-safe:hover:-translate-y-0.5 motion-safe:transition rounded-lg ring-1 ring-slate-900/5 shadow-xl text-white"
+        }
+        onClick={handleClick}
+      >
+        Throw Pokeball
+      </button>
       <div>{renderedPokemon}</div>
     </div>
   );

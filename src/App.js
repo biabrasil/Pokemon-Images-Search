@@ -8,21 +8,13 @@ import Banner from "./components/Banner";
 import Button from "./components/Button";
 
 function App() {
-  
   return (
     <div className="App">
       <Banner></Banner>
-      <Button></Button>
       <div className="flex pt-5 pb-10 justify-center">
         <img className="w-44" src={Pokédex} />
       </div>
-      <div className="flex gap-x-5 px-10">
-        <ProfileCard title="Bulbasaur" handle="Grass" image={Bulbasaur} />
-
-        <ProfileCard title="Chikorita" handle="Grass" image={Chikorita} />
-
-        <ProfileCard title="Pikachu" handle="Electric" image={Pikachu} />
-      </div>
+      <Button></Button>
     </div>
   );
 }
