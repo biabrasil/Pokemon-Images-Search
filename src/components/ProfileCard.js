@@ -14,7 +14,7 @@ function ProfileCard({ title, handle, image }) {
           <p className="text-gray-40 text-sm pb-0">Pokémon Name</p>
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="text-gray-60 pb-5 pt-2">Type: {handle}</p>
-          <img src={image} height={100} width={100} alt="Pokemon" className={'flex mx-auto'}></img>
+          <img src={image} height={150} width={150} alt="Pokemon" className={'flex mx-auto'}></img>
           
         </div>
       
