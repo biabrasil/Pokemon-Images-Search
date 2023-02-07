@@ -1,7 +1,16 @@
 import { MegaphoneIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { useState } from "react";
 
 export default function Example() {
+
+  const [isShown, setIsShown] = useState(true);
+
+  const handleClick = event => {
+    setIsShown(current => !current); }
+
+  
   return (
+    isShown && (
     <div className="bg-indigo-600">
       <div className="mx-auto max-w-7xl py-3 px-3 sm:px-6 lg:px-8">
         <div className="flex flex-wrap items-center justify-between">
@@ -32,6 +41,7 @@ export default function Example() {
           </div>
           <div className="order-2 flex-shrink-0 sm:order-3 sm:ml-3">
             <button
+            onClick={handleClick}
               type="button"
               className="-mr-1 flex rounded-md p-2 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white sm:-mr-2"
             >
@@ -42,5 +52,5 @@ export default function Example() {
         </div>
       </div>
     </div>
-  );
+  ));
 }

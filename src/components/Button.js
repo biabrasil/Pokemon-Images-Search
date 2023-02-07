@@ -7,6 +7,7 @@ import Gengar from "../images/Gengar.png";
 import Jigglypuff from "../images/Jigglypuff.png";
 
 export default function Button() {
+
   const imageMap = {
     Pikachu,
     Bulbasaur,
