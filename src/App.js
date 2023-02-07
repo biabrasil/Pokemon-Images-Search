@@ -5,11 +5,14 @@ import Chikorita from "./images/chikorita.png";
 import Pikachu from "./images/pikachu.png";
 import Pokédex from "./images/pokedex.webp";
 import Banner from "./components/Banner";
+import Button from "./components/Button";
 
 function App() {
+  
   return (
     <div className="App">
       <Banner></Banner>
+      <Button></Button>
       <div className="flex pt-5 pb-10 justify-center">
         <img className="w-44" src={Pokédex} />
       </div>

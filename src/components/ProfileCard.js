@@ -4,7 +4,7 @@ function ProfileCard({ title, handle, image }) {
       <div className="space-y-0">
         <p className="text-gray-40 text-sm pb-0">Pokémon Name</p>
         <h3 className="text-2xl font-semibold">{title}</h3>
-        <p className="text-gray-60 pb-5 py-3">Type: {handle}</p>
+        <p className="text-gray-60 pb-5 pt-2">Type: {handle}</p>
         <img src={image} height={100} width={100} alt="Pokemon"></img>
       </div>
     </div>
