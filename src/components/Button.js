@@ -7,7 +7,6 @@ import Gengar from "../images/Gengar.png";
 import Jigglypuff from "../images/Jigglypuff.png";
 
 export default function Button() {
-
   const imageMap = {
     Pikachu,
     Bulbasaur,
@@ -35,13 +34,11 @@ export default function Button() {
 
   const renderedPokemon = pokemon.map((pokemon, index) => {
     return (
-     
       <ProfileCard
         title={pokemon}
         key={index}
         image={imageMap[pokemon]}
       ></ProfileCard>
-
     );
   });
 
